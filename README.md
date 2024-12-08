@@ -16,4 +16,4 @@ The **GitReload Extension** is a simple Chrome extension that automatically relo
    - Download the repository or clone it using the following command:
 
    ```bash
-   git clone https://github.com/your-username/auto-reload-extension.git
+   git clone https://github.com/VatsalyaGautam/GitReload-Chrome-Extension.git
