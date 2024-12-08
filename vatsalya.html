@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto Reload Extension</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      width: 400px;
+      padding: 30px 70px;
+
+      background-color: #0d1116;
+      border-radius: 25px;
+    }
+    #bhai1{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 200px;
+    }
+    article{
+      color: azure;
+      text-align: center;
+      font-size: 14px;
+      margin-bottom:5px ;
+      transition: transform 0.3s ease-out, color 0.3s, text-shadow 0.3s ease-out;
+      margin-bottom: 8px;
+    }
+    #flexy{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    #header{
+        text-align: center;
+        color:#0d1116;
+        transition: transform 0.3s ease-out, color 0.3s, text-shadow 0.3s ease-out;
+        font-size: 35px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    #header:hover,article:hover{
+        transform: scale(1.02);
+        color: white;
+    }
+    article:hover{
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8) !important;
+      
+    }
+
+    #secondsInput{
+      width: 80%;
+      height: 30px;
+      color: #0d1116;
+      height: 40px;
+      font-size: 18px;
+      text-align: center;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #202830;
+      color: white;
+      border: none;
+      border-radius: var(--borderRadius-medium, .375rem);
+      padding: 10px;
+      cursor: pointer;
+      font-size: 14px;
+      width: 80%;
+      transition: transform 0.4s ease-out, color 0.4s ease-in, background-color 0.4s ease-in, text-shadow 0.4s ease-out;
+    }
+    button:hover {
+      background-color: #238636;
+      transform: scale(1.04);
+      color: white;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.8) !important;
+    }
+    
+    #whitesmoke{
+       color:whitesmoke
+    }
+    #greeny{
+      color:#238636
+    }
+    
+  </style>
+</head>
+<body>
+  <div id="bhai1">
+    <h1 id = "header"> <span id="invisible"> -> </span><span id="whitesmoke" >Git</span><span id="greeny">Reload</span>  <span id="invisible"> <- </span></h1>
+    
+    <div>
+      <article>Enter frequency in seconds</article>
+      <div id="flexy"> <input id="secondsInput" type="number" min="1" placeholder="default : 1 sec"></div>
+     
+      
+    </div>
+    <div id="flexy"><button id="toggleReload">Start Auto-Reload</button></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

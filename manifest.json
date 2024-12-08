@@ -1,0 +1,15 @@
+{
+    "name": "Vatsalya-auto-reload",
+    "version": "10.0.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "vatsalya.html",
+      "default_icon": "PngItem_7482516.png"
+    },
+    "icons": {
+      "128": "PngItem_7482516.png"
+    },
+    "permissions": [
+      "tabs"
+    ]
+  }
